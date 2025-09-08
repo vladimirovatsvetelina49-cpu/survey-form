@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <link rel="stylesheet" href="styles.css">
+ </head>
+ <body>
+  <h1 id="title">Travel Survey Form</h1>
+  <p id="description">Travel Preference Survey</p>
+
+  <form id="survey-form">
+    <fieldset>
+      <label id="name-label" >Write your name: <input id="name" type="text" required placeholder="Write your name"></label>
+
+      <label id="email-label">Write your email address:<input id="email" type="email" required placeholder="Write your email"></label>
+
+      <label id="number-label">Choose the number of destinations<input id="number" type="number" min="1" max="4" placeholder="1"></label>
+      </fieldset>
+      <fieldset>
+        <select id="dropdown" >
+        <option>Greece</option>
+        <option>Spain</option>
+        <option>Italy</option>
+        <option>Portugal</option>
+        <option>England</option>
+        <option>Egypt</option>
+
+        </select>
+      </fieldset>
+      <fieldset>
+        <label for="solo-travel">Solo travel<input type="radio" value="solo" name="travel-type"></label>
+        <label for="group-travel">Group travel<input type="radio" value="group" name="travel-type"></label>
+      </fieldset>
+      <fieldset>
+        <p>Choose your preffered holiday</p>
+        <label><input type="checkbox" name="holiday" value="beach-holiday">Beach Holiday
+
+        <label><input type="checkbox" name="holiday" value="mountain-holiday">Mountain Holiday
+
+        <label><input type="checkbox" name="holiday" value="city-holiday">City Holiday
+
+        <label><input type="checkbox" name="holiday" value="mixed-holiday">A little mix of everything 
+      </fieldset>
+        <label for="other-destinations">What other destinations would you like to experience as well: 
+<textarea id="other-destinations"></textarea>
+
+<input id="submit" value="Submit" type="submit" />
+
+    </form>
+  </body>
+</html>
